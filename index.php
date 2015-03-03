@@ -15,6 +15,12 @@ $stmt->execute();
 $samtal = $stmt->fetchAll();
 
 var_dump($samtal);
+foreach ($samtal as $sam) {
+    echo $sam["0"]." ";
+    echo $sam["1"];
+    echo '<br>';
+    
+}
 
 
 ?>
